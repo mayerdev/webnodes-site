@@ -1,0 +1,119 @@
+<div class="wrapper">
+  <div class="subnav">
+    <div class="content">
+      <span>WebNodes</span>
+      <span class="right">support@webnodes.ru</span>
+      <span>+7 (499) 490-66-56</span>
+    </div>
+  </div>
+  <div class="header">
+    <div class="content">
+      <img src="/assets/logo.svg" alt="WebNodes" class="logo" routerLink="/" routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }">
+
+      <div class="menu">
+        <!-- <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Главная</a> -->
+        <a routerLink="/hosting/free" routerLinkActive="active">Бесплатный хостинг</a>
+        <a routerLink="/hosting/standard" routerLinkActive="active">Веб-хостинг</a>
+        <a routerLink="/hosting/reseller" routerLinkActive="active">Реселлинг</a>
+        <a routerLink="/hosting/vps" routerLinkActive="active">VDS/VPS</a>
+        <a routerLink="/domains" routerLinkActive="active">Домены</a>
+        <a routerLink="/additional/licenses" routerLinkActive="active">Лицензии на ПО</a>
+        <a href="https://my.webnodes.ru" target="_blank" class="right">
+          <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+            <path
+              d="M192 176v-40a40 40 0 0140-40h160a40 40 0 0140 40v240a40 40 0 01-40 40H240c-22.09 0-48-17.91-48-40v-40"
+              fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+              d="M288 336l80-80-80-80M80 256h272" />
+          </svg>
+          Личный кабинет
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="content" [@routing]="outlet.isActivated ? outlet.activatedRoute : ''">
+    <router-outlet #outlet="outlet"></router-outlet>
+  </div>
+  <div class="footer">
+    <div class="content">
+      <div class="block">
+        <img src="/assets/logo-text.svg" alt="WebNodes" class="logo">
+        <div class="contact">
+          <small>Поддержка с 8:00 до 18:00 (MSK+1)</small>
+          +7 (499) 490-66-56
+        </div>
+
+        <a href="mailto:support@webnodes.ru">
+          <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+            <rect x="48" y="96" width="416" height="320" rx="40" ry="40" fill="none" stroke="currentColor"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+              d="M112 160l144 112 144-112" />
+          </svg>
+
+          support@webnodes.ru &mdash; Если нужна помощь
+        </a>
+
+        <a href="mailto:partners@webnodes.ru">
+          <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+            <rect x="48" y="96" width="416" height="320" rx="40" ry="40" fill="none" stroke="currentColor"
+              stroke-linecap="round" stroke-linejoin="round" stroke-width="32" />
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+              d="M112 160l144 112 144-112" />
+          </svg>
+
+          partners@webnodes.ru &mdash; По вопросам сотрудничества
+        </a>
+
+        <div class="links">
+          <a routerLink="/docs/oferta">Договор оферты</a>
+          <a routerLink="/docs/privacy">Политика обработки персональных данных</a>
+          <a routerLink="/docs/refund">Возврат средств</a>
+          <a routerLink="/docs/bank">Реквизиты организации</a>
+          <a routerLink="/docs/reselling">Программа реселлинга</a>
+          <a routerLink="/docs/white-label">White Label</a>
+        </div>
+      </div>
+
+      <div class="block flex">
+        <div class="menu">
+          <span>Хостинг</span>
+          <a routerLink="/hosting/free">Бесплатный хостинг</a>
+          <a routerLink="/hosting/standard">Хостинг сайтов</a>
+          <a routerLink="/hosting/reseller">Реселлер-хостинг</a>
+          <a routerLink="/hosting/vps">Виртуальные серверы</a>
+        </div>
+
+        <div class="menu to-top">
+          <span>Регистрация доменов</span>
+          <a routerLink="/domains">Регистрация .RU за 179 рублей</a>
+          <a routerLink="/domains">Регистрация .РФ за 179 рублей</a>
+          <a routerLink="/domains">Регистрация .STORE за 49 рублей</a>
+        </div>
+      </div>
+
+      <div class="block flex">
+        <div class="menu">
+          <span>Лицензии на ПО</span>
+          <a routerLink="/additional/licenses">cPanel/WHM</a>
+          <a routerLink="/additional/licenses">DirectAdmin</a>
+          <a routerLink="/additional/licenses">Plesk</a>
+          <a routerLink="/additional/licenses">SolusVM</a>
+          <a routerLink="/additional/licenses">Virtualizor</a>
+          <a routerLink="/additional/licenses">CloudLinux</a>
+        </div>
+
+        <div class="social">
+          <div class="item">
+            <img src="/assets/icons/vk.svg" alt="ВКонтакте">
+            <div class="content">
+              <a href="https://vk.com/webnodes" target="_blank">Группа</a>
+              <a href="https://vk.me/join/LspE67vwYY2QNVxXDyIFqj7jLydGJjDvlPo=" target="_blank">Беседа</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

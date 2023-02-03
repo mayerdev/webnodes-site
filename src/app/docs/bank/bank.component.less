@@ -1,0 +1,23 @@
+.reqs {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border: 1px solid #efefef;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1%);
+  border-radius: 8px;
+
+  & > .item {
+    display: flex;
+    padding: 32px;
+
+    & > .key {
+      margin-right: auto;
+      width: 50%;
+    }
+
+    & > .value {
+      font-weight: 500;
+      width: 50%;
+    }
+  }
+}

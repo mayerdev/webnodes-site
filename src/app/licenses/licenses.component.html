@@ -1,0 +1,126 @@
+<h2 class="block-title">Стоимость лицензий на ПО</h2>
+
+<div class="services">
+  <div class="card">
+    <div class="card-header">
+      cPanel/WHM
+    </div>
+    <div class="card-body">
+      Для виртуальных серверов: <b>600 рублей в месяц</b><br>
+      Для выделенных серверов: <b>1000 рублей в месяц.</b>
+
+      <a href="https://my.webnodes.ru/" target="_blank">
+        Подробнее
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+            d="M184 112l144 144-144 144" />
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      Plesk
+    </div>
+    <div class="card-body">
+      Для виртуальных серверов: <b>450 рублей в месяц</b><br>
+      Для выделенных серверов: <b>700 рублей в месяц.</b>
+
+      <a href="https://my.webnodes.ru/" target="_blank">
+        Подробнее
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+            d="M184 112l144 144-144 144" />
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header">
+      SolusVM
+    </div>
+    <div class="card-body">
+      Мастер-лицензия: <b>500 рублей в месяц</b><br>
+      Слейв-лицензия: <b>150 рублей в месяц.</b>
+
+      <a href="https://my.webnodes.ru/" target="_blank">
+        Подробнее
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+            d="M184 112l144 144-144 144" />
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="card sm">
+    <div class="card-header">
+      Virtualizor
+    </div>
+    <div class="card-body">
+      Стоимость: <b>500 рублей в месяц</b>
+
+      <a href="https://my.webnodes.ru/" target="_blank">
+        Подробнее
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+            d="M184 112l144 144-144 144" />
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="card sm">
+    <div class="card-header">
+      DirectAdmin
+    </div>
+    <div class="card-body">
+      Стоимость: <b>450 рублей в месяц</b>
+
+      <a href="https://my.webnodes.ru/" target="_blank">
+        Подробнее
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+            d="M184 112l144 144-144 144" />
+        </svg>
+      </a>
+    </div>
+  </div>
+  <div class="card sm">
+    <div class="card-header">
+      CloudLinux
+    </div>
+    <div class="card-body">
+      Стоимость: <b>500 рублей в месяц</b>
+
+      <a href="https://my.webnodes.ru/" target="_blank">
+        Подробнее
+
+        <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+          <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="48"
+            d="M184 112l144 144-144 144" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="faq" style="margin-top: 32px;">
+  <div class="item" *ngFor="let item of faq; let i = index" [ngClass]="{ active: open === i }">
+    <div class="header" (click)="open = open === i ? -1 : i">{{ item.header }}</div>
+    <div class="body" *ngIf="open === i">{{ item.body }}</div>
+  </div>
+</div>
+
+<div class="call-action">
+  <div class="content">
+    <h1>
+      Уже хотите купить или остались вопросы?
+      <small>Вы можете перейти в биллинг панель и заказать услуги, либо создать тикет со своим вопросом.</small>
+    </h1>
+    <a href="https://my.webnodes.ru" target="_blank">Создать аккаунт</a>
+  </div>
+</div>

@@ -1,0 +1,80 @@
+<h2 class="block-title">Тарифы бесплатного хостинга</h2>
+
+<div class="tariffs-table">
+  <div class="column">
+    <div class="item">
+      Тариф<br><br>
+      <small></small>
+    </div>
+    <div class="item">Количество сайтов</div>
+    <div class="item">Базы данных</div>
+    <div class="item">Объём диска</div>
+    <div class="item">Оперативная память</div>
+    <div class="item">Реклама</div>
+    <div class="item"></div>
+  </div>
+  <div class="column content">
+    <div class="item">
+      <span class="tariff-name">Базовый</span>
+      <small>Без рекламы, но меньше места</small>
+    </div>
+    <div class="item">1 сайт</div>
+    <div class="item">1 база данных</div>
+    <div class="item">1 ГБ</div>
+    <div class="item">128 МБ</div>
+    <div class="item">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+          d="M368 368L144 144M368 144L144 368" />
+      </svg>
+    </div>
+    <div class="item">
+      <a href="https://my.webnodes.ru" class="btn btn-primary btn-outline">Создать аккаунт</a>
+    </div>
+  </div>
+  <div class="column content featured">
+    <div class="item">
+      <span class="tariff-name">Базовый+</span>
+      <small>С рекламой и больше места</small>
+    </div>
+    <div class="item">4 сайт</div>
+    <div class="item">4 база данных</div>
+    <div class="item">2 ГБ</div>
+    <div class="item">512 МБ</div>
+    <div class="item">Виджет-картинка</div>
+    <div class="item">
+      <a href="https://my.webnodes.ru" class="btn btn-primary">Создать аккаунт</a>
+    </div>
+  </div>
+  <div class="column content">
+    <div class="item">
+      <span class="tariff-name">Персональный</span>
+      <small>Если у вас интересный проект :)</small>
+    </div>
+    <div class="item">Персонально</div>
+    <div class="item">Персонально</div>
+    <div class="item">Персонально</div>
+    <div class="item">Персонально</div>
+    <div class="item">Персонально</div>
+    <div class="item">
+      <a href="mailto:partners@webnodes.ru" class="btn btn-primary btn-outline">Связаться с нами</a>
+    </div>
+  </div>
+</div>
+
+<div class="faq">
+  <div class="item" *ngFor="let item of faq; let i = index" [ngClass]="{ active: open === i }">
+    <div class="header" (click)="open = open === i ? -1 : i">{{ item.header }}</div>
+    <div class="body" *ngIf="open === i">{{ item.body }}</div>
+  </div>
+</div>
+
+<div class="call-action">
+  <div class="content">
+    <h1>
+      Уже хотите купить или остались вопросы?
+      <small>Вы можете перейти в биллинг панель и заказать услуги, либо создать тикет со своим вопросом.</small>
+    </h1>
+    <a href="https://my.webnodes.ru" target="_blank">Создать аккаунт</a>
+  </div>
+</div>

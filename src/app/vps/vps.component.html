@@ -1,0 +1,182 @@
+<h2 class="block-title">Тарифы VPS-хостинга</h2>
+
+<div class="switch">
+  <button class="btn btn-primary btn-sm" [ngClass]="{ 'btn-outline': type === 'lowcost' }"
+    (click)="type = 'resources'">Много ресурсов</button>
+  <button class="btn btn-primary btn-sm" [ngClass]="{ 'btn-outline': type === 'resources' }"
+    (click)="type = 'lowcost'">Низкая цена</button>
+</div>
+
+<div class="tariffs-table" *ngIf="type === 'resources'">
+  <div class="column">
+    <div class="item">
+      Тариф<br><br>
+      <small></small>
+    </div>
+    <div class="item">Ядер процессора</div>
+    <div class="item">Оперативная память</div>
+    <div class="item">Диск</div>
+    <div class="item">Сеть</div>
+    <div class="item">Трафик</div>
+    <div class="item">Бесплатное ПО*</div>
+    <div class="item">Администрирование</div>
+    <div class="item">Стоимость</div>
+    <div class="item"></div>
+  </div>
+  <div class="column content">
+    <div class="item">
+      <span class="tariff-name">VPS L</span>
+      <small>Если нужно немного</small>
+    </div>
+    <div class="item">4 ядра</div>
+    <div class="item">12 ГБ</div>
+    <div class="item">128 ГБ</div>
+    <div class="item">10 Гб/с</div>
+    <div class="item">Безлимитный</div>
+    <div class="item">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+          d="M368 368L144 144M368 144L144 368" />
+      </svg>
+    </div>
+    <div class="item">Базовое</div>
+    <div class="item">1490 рублей / месяц</div>
+    <div class="item">
+      <a href="https://my.webnodes.ru" class="btn btn-primary btn-outline">Перейти к заказу</a>
+    </div>
+  </div>
+  <div class="column content featured">
+    <div class="item">
+      <span class="tariff-name">VPS XL</span>
+      <small>Когда нужно больше</small>
+    </div>
+    <div class="item">8 ядер</div>
+    <div class="item">24 ГБ</div>
+    <div class="item">256 ГБ</div>
+    <div class="item">10 Гб/с</div>
+    <div class="item">Безлимитный</div>
+    <div class="item">
+      <span class="tag">cPanel/DirectAdmin</span>
+    </div>
+    <div class="item">Базовое</div>
+    <div class="item">2990 рублей / месяц</div>
+    <div class="item">
+      <a href="https://my.webnodes.ru" class="btn btn-primary">Перейти к заказу</a>
+    </div>
+  </div>
+  <div class="column content">
+    <div class="item">
+      <span class="tariff-name">VPS XXL</span>
+      <small>Максимум не предел</small>
+    </div>
+    <div class="item">12 ядер</div>
+    <div class="item">32 ГБ</div>
+    <div class="item">512 ГБ</div>
+    <div class="item">10 Гб/с</div>
+    <div class="item">Безлимитный</div>
+    <div class="item">
+      <span class="tag">cPanel/DirectAdmin</span>
+    </div>
+    <div class="item">Базовое</div>
+    <div class="item">4590 рублей / месяц</div>
+    <div class="item">
+      <a href="https://my.webnodes.ru" class="btn btn-primary btn-outline">Перейти к заказу</a>
+    </div>
+  </div>
+</div>
+
+<div class="tariffs-table" *ngIf="type === 'lowcost'">
+  <div class="column">
+    <div class="item">
+      Тариф<br><br>
+      <small></small>
+    </div>
+    <div class="item">Ядер процессора</div>
+    <div class="item">Оперативная память</div>
+    <div class="item">Диск</div>
+    <div class="item">Сеть</div>
+    <div class="item">Трафик</div>
+    <div class="item">Бесплатное ПО*</div>
+    <div class="item">Администрирование</div>
+    <div class="item">Стоимость</div>
+    <div class="item"></div>
+  </div>
+  <div class="column content">
+    <div class="item">
+      <span class="tariff-name">VPS XS</span>
+      <small>Базовый тариф</small>
+    </div>
+    <div class="item">1 ядро</div>
+    <div class="item">1 ГБ</div>
+    <div class="item">32 ГБ</div>
+    <div class="item">10 Гб/с</div>
+    <div class="item">Безлимитный</div>
+    <div class="item">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+          d="M368 368L144 144M368 144L144 368" />
+      </svg>
+    </div>
+    <div class="item">Базовое</div>
+    <div class="item">190 рублей / месяц</div>
+    <div class="item">
+      <a href="https://my.webnodes.ru" class="btn btn-primary btn-outline">Перейти к заказу</a>
+    </div>
+  </div>
+  <div class="column content featured">
+    <div class="item">
+      <span class="tariff-name">VPS S</span>
+      <small>Чуть больше</small>
+    </div>
+    <div class="item">2 ядра</div>
+    <div class="item">4 ГБ</div>
+    <div class="item">48 ГБ</div>
+    <div class="item">10 Гб/с</div>
+    <div class="item">Безлимитный</div>
+    <div class="item">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+          d="M368 368L144 144M368 144L144 368" />
+      </svg>
+    </div>
+    <div class="item">Базовое</div>
+    <div class="item">490 рублей / месяц</div>
+    <div class="item">
+      <a href="https://my.webnodes.ru" class="btn btn-primary">Перейти к заказу</a>
+    </div>
+  </div>
+  <div class="column content">
+    <div class="item">
+      <span class="tariff-name">VPS M</span>
+      <small>Средний минимум</small>
+    </div>
+    <div class="item">4 ядер</div>
+    <div class="item">8 ГБ</div>
+    <div class="item">64 ГБ</div>
+    <div class="item">10 Гб/с</div>
+    <div class="item">Безлимитный</div>
+    <div class="item">
+      <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+        <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"
+          d="M368 368L144 144M368 144L144 368" />
+      </svg>
+    </div>
+    <div class="item">Базовое</div>
+    <div class="item">790 рублей / месяц</div>
+    <div class="item">
+      <a href="https://my.webnodes.ru" class="btn btn-primary btn-outline">Перейти к заказу</a>
+    </div>
+  </div>
+</div>
+
+<p class="description">* для получения лицензии на бесплатное ПО после заказа создайте тикет в поддержку, если бесплатное ПО входит в ваш тариф.</p>
+
+<div class="call-action">
+  <div class="content">
+    <h1>
+      Уже хотите купить или остались вопросы?
+      <small>Вы можете перейти в биллинг панель и заказать услуги, либо создать тикет со своим вопросом.</small>
+    </h1>
+    <a href="https://my.webnodes.ru" target="_blank">Создать аккаунт</a>
+  </div>
+</div>

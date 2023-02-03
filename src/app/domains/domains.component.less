@@ -1,0 +1,37 @@
+.prices {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  & > .item {
+    background: #fff;
+    display: flex;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #efefef;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 2%);
+    align-items: center;
+
+    & > .title {
+      font-weight: 600;
+      font-size: 18px;
+    }
+
+    & > .cost {
+      margin-left: auto;
+      text-align: right;
+
+      & > .title {
+        font-size: 16px;
+        font-weight: 500;
+        display: block;
+      }
+
+      & > .subtitle {
+        font-size: 14px;
+        display: block;
+        margin-top: 8px;
+      }
+    }
+  }
+}
